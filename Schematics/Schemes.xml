@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>P:/Slackware/Projects/ESP8266/Schematics/Schemes.sch</source>
+    <date>12.1.2018 г. 20:19:59</date>
+    <tool>Eeschema 4.0.5</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>WT02-Schematics</title>
+        <company/>
+        <rev>v1.0</rev>
+        <date>2018-01-02</date>
+        <source>Schemes.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U3">
+      <value>BME280</value>
+      <libsource lib="tinkerforge" part="BME280"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A4BBA91</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>5.3-26V to 3.3V DC-DC</value>
+      <libsource lib="tinkerforge" part="DCDC-CRE1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A4BBC0B</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>ESP-01</value>
+      <footprint>ESP8266:ESP-01</footprint>
+      <libsource lib="ESP8266" part="ESP-01v090"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A4BB64B</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>RJ11-4</value>
+      <libsource lib="connectors" part="RJ11-4"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A58F5C1</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>RJ11-4</value>
+      <libsource lib="connectors" part="RJ11-4"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A58F680</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>BARREL_JACK_2PIN</value>
+      <libsource lib="conn" part="BARREL_JACK_2PIN"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A58F7DF</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>CONN_01X03_MALE</value>
+      <libsource lib="conn" part="CONN_01X03_MALE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A58F8D6</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="conn" part="BARREL_JACK_2PIN">
+      <description>DC Barrel Jack</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">BARREL_JACK_2PIN</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="tinkerforge" part="BME280">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BME280</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="SCL" type="passive"/>
+        <pin num="4" name="SDA" type="passive"/>
+        <pin num="5" name="CSB" type="passive"/>
+        <pin num="6" name="SDO" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X03_MALE">
+      <description>Generic Male Connector, single row,  01x03</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X03_MALE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="tinkerforge" part="DCDC-CRE1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DCDC-CRE1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-Vin" type="passive"/>
+        <pin num="2" name="+Vin" type="passive"/>
+        <pin num="3" name="-Vout" type="passive"/>
+        <pin num="4" name="+Vout" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ESP8266" part="ESP-01v090">
+      <description>ESP8266 ESP-01 module, v090</description>
+      <docs>http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/</docs>
+      <footprints>
+        <fp>ESP-01*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP-01v090</field>
+      </fields>
+      <pins>
+        <pin num="1" name="UTXD" type="output"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="CH_PD" type="input"/>
+        <pin num="4" name="GPIO2" type="3state"/>
+        <pin num="5" name="RST" type="input"/>
+        <pin num="6" name="GPIO0" type="3state"/>
+        <pin num="7" name="VCC" type="power_in"/>
+        <pin num="8" name="URXD" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="connectors" part="RJ11-4">
+      <footprints>
+        <fp>RJ11-6</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">RJ11-4</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>D:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+    <library logical="ESP8266">
+      <uri>D:\Program Files\KiCad\share\kicad\library\ESP8266.lib</uri>
+    </library>
+    <library logical="connectors">
+      <uri>D:\Program Files\KiCad\share\kicad\library\kicad-parts-master\libraries\connectors.lib</uri>
+    </library>
+    <library logical="tinkerforge">
+      <uri>D:\Program Files\KiCad\share\kicad\library\kicad-libraries-master\tinkerforge.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(J1-Pad1)">
+      <node ref="U1" pin="2"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="2" name="Net-(J1-Pad2)">
+      <node ref="U1" pin="1"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="3" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="4" name="Net-(J2-Pad1)">
+      <node ref="U2" pin="8"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="5" name="Net-(J2-Pad3)">
+      <node ref="J2" pin="3"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="6" name="/Black">
+      <node ref="U3" pin="5"/>
+      <node ref="U3" pin="1"/>
+      <node ref="U1" pin="4"/>
+      <node ref="J3" pin="1"/>
+      <node ref="J4" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="U3" pin="6"/>
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="7" name="GND">
+      <node ref="U3" pin="2"/>
+      <node ref="U3" pin="3"/>
+      <node ref="U3" pin="4"/>
+      <node ref="U2" pin="6"/>
+      <node ref="J2" pin="2"/>
+      <node ref="U2" pin="4"/>
+      <node ref="U2" pin="2"/>
+      <node ref="U1" pin="3"/>
+      <node ref="J4" pin="4"/>
+      <node ref="J4" pin="3"/>
+      <node ref="J4" pin="2"/>
+      <node ref="J3" pin="4"/>
+      <node ref="J3" pin="3"/>
+      <node ref="J3" pin="2"/>
+    </net>
+  </nets>
+</export>
