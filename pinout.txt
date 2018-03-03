@@ -1,0 +1,11 @@
+1 VCC - black
+2 GPIO2 (index 4, I2C: pinSCL) - red
+3 GND - green
+4 GPIO0 (index 3, I2C: pinSDA) - yellow
+
+ 1234
+ ____
+||||||
+||||||
+|====|
+|____|
